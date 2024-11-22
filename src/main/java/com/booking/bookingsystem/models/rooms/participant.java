@@ -11,5 +11,8 @@ public class participant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
+    @Column(nullable = false)
+    private int userId;
+    @Column(nullable = false)
+    private int roomId;
 }
